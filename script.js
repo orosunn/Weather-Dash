@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     function showWeather() {
-        let weatherApiUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=' + latitude + '&lon=' + longitude + '&appid=fd1869469cc46ceadda145678340a55a';
+        let weatherApiUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=' + latitude + '&lon=' + longitude + '&appid=fd1869469cc46ceadda145678340a55a&units=metric';
 
         fetch(weatherApiUrl)
             .then(response => response.json())
