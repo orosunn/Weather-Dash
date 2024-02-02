@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function getWeather() {
         let city = document.getElementById('searchBar').value;
-        let geoApiUrl = 'http://api.openweathermap.org/geo/1.0/direct?q=' + city + '&limit=1&appid=fd1869469cc46ceadda145678340a55a';
+        let geoApiUrl = 'https://api.openweathermap.org/geo/1.0/direct?q=' + city + '&limit=1&appid=fd1869469cc46ceadda145678340a55a';
 
         fetch(geoApiUrl)
             .then(response => response.json())
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     function showWeather() {
-        let weatherApiUrl = 'http://api.openweathermap.org/data/2.5/forecast?lat=' + latitude + '&lon=' + longitude + '&appid=fd1869469cc46ceadda145678340a55a';
+        let weatherApiUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=' + latitude + '&lon=' + longitude + '&appid=fd1869469cc46ceadda145678340a55a';
 
         fetch(weatherApiUrl)
             .then(response => response.json())
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <p>Temperature: ${currentWeather.main.temp}</p>
             <p>Humidity: ${currentWeather.main.humidity}</p>
             <p>Wind Speed: ${currentWeather.wind.speed}</p>
-            <img src="http://openweathermap.org/img/wn/${currentWeather.weather[0].icon}.png" alt="Weather Icon">
+            <img src="https://openweathermap.org/img/wn/${currentWeather.weather[0].icon}.png" alt="Weather Icon">
         `;
     }
 
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             <p>Temperature: ${item.main.temp}</p>
                             <p>Humidity: ${item.main.humidity}</p>
                             <p>Wind Speed: ${item.wind.speed}</p>
-                            <img src="http://openweathermap.org/img/wn/${item.weather[0].icon}.png" alt="Weather Icon">
+                            <img src="https://openweathermap.org/img/wn/${item.weather[0].icon}.png" alt="Weather Icon">
                         </li>
                     `;
                 }).join('')}
