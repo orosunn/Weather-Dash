@@ -1,0 +1,56 @@
+h1 {
+    text-align: center;
+}
+
+#currentWeather, #forecastWeather {
+    margin-top: 20px;
+}
+
+#forecastWeather ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#forecastWeather li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#forecastWeather img {
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    max-width: 300px; 
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#recentSearches {
+    list-style: none;
+    padding: 0;
+}
+
+#recentSearches li {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#recentSearches li:hover {
+    background-color: #e0e0e0;
+}
